@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.card {
+  max-width: 45%;
+  box-shadow: 1px 4px 6px -1px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 1px 4px 6px -1px rgba(0,0,0,0.24);
+  -moz-box-shadow: 1px 4px 6px -1px rgba(0,0,0,0.24);
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.flex {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.card-button {
+  border: 2px solid royalblue;
+  color: royalblue;
+  padding: .4rem;
+  text-decoration: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 auto;
+  display: inherit;
+}
+.modal {
+  max-width: 100%;
+  box-shadow: 1px 4px 6px -1px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 1px 4px 6px -1px rgba(0,0,0,0.24);
+  -moz-box-shadow: 1px 4px 6px -1px rgba(0,0,0,0.24);
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 3rem;
+  position: relative;
+  background-color: #ffffffe8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.modal-false {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: -9;
+  opacity: 0;
+  transition: ease-in ease-in-out .3s;
+}
+.modal-true {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 99;
+  opacity: 1;
+}
+label {
+  margin-left: .2rem;
+}
